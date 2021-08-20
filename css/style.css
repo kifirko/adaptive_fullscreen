@@ -600,6 +600,11 @@ body {
 .button__item span:hover {
   border: 1px solid #64c29e;
 }
+@media screen and (max-width: 300px) {
+  .button__item span {
+    padding: 20px 10px;
+  }
+}
 
 .form {
   padding: 105px 0;
@@ -629,6 +634,11 @@ body {
   padding: 20px;
   margin: 10px 0 0 0;
 }
+@media screen and (max-width: 500px) {
+  .form input[type=text] {
+    width: 95%;
+  }
+}
 .form input[type=button] {
   vertical-align: middle;
   letter-spacing: 1.5px;
@@ -648,6 +658,12 @@ body {
 .form input[type=button]:hover {
   color: #64969e;
   border: 2px solid #64969e;
+}
+@media screen and (max-width: 500px) {
+  .form input[type=button] {
+    width: 95%;
+    margin: 10px 0 0 0;
+  }
 }
 
 footer {

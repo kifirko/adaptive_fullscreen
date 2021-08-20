@@ -564,9 +564,6 @@ margin: 0 0 27px 0;
 
 
 		
-		
-
-
 	&__item {
 		display: flex;
 		align-items: center;
@@ -577,11 +574,15 @@ margin: 0 0 27px 0;
 				color: white;
 				font-size: 10px;
 				font-weight: 700;
-				letter-spacing: 2.6px;		padding: 20px 50px;
+				letter-spacing: 2.6px;		
+				padding: 20px 50px;
 				border: 1px solid white;
 				transition-duration: 1s;
 			&:hover {
 				border: 1px solid rgba(100, 194, 158, 1);}
+
+				@media screen and (max-width: 300px) {
+   	padding: 20px 10px;}
 		
 	}
 	}
@@ -617,8 +618,8 @@ margin: 0 0 27px 0;
   padding: 20px;
   margin: 10px 0 0 0;
 
-
-   
+  		@media screen and (max-width: 500px) {
+   	width: 95%;}
 
 	}
 
@@ -643,6 +644,12 @@ margin: 0 0 27px 0;
   		color: rgba(100, 150, 158, 1);
   		border: 2px solid rgba(100, 150, 158, 1); 
   	}
+
+  		@media screen and (max-width: 500px) {
+   	width: 95%;
+    	margin: 10px 0 0 0;}
+
+
 	}
 
 }
