@@ -79,7 +79,7 @@ body {
 			position: relative;
 			transition-duration: 1s;
 			&:hover {
-				color: red;
+				color: rgba(100, 194, 158, 1);
 
 			}
 			&:nth-child(2){
@@ -126,14 +126,17 @@ body {
 		&__link {
 			color: white;
 			font-size: 23px;
+
 		}
 		&__list {
+
 			flex-direction:column;
 			position: relative;
 			top: 120px;
 			align-items: center;
 
 			li {
+				cursor: pointer;
 			&:nth-child(2){
 				padding: 30px 0;
 				&:after {display: block;}	}
@@ -221,9 +224,10 @@ body {
 		margin: 0 auto;
 		// border: 10px solid #ece89d;
 		
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width:800px) {
 		flex-direction: column;
 	}
+
 	}
 
 		&__column-1 {
@@ -396,6 +400,7 @@ margin: 0 0 27px 0;
 }
 
 
+// ====================== Brands-DOWN block ======================
 
 .brands-down {
 	min-width: 100%;
@@ -408,6 +413,9 @@ margin: 0 0 27px 0;
 	&__main-row {
 		display: flex;
 
+		@media screen and (max-width: 800px) {
+		flex-direction: column;
+	}
 		
 
 	}
@@ -573,13 +581,148 @@ margin: 0 0 27px 0;
 				border: 1px solid white;
 				transition-duration: 1s;
 			&:hover {
-				border: 1px solid red;}
+				border: 1px solid rgba(100, 194, 158, 1);}
 		
 	}
 	}
 }
 
-.wrapper {
+// ====================== FORM block ======================
+
+.form {
+	padding: 105px 0;
+	text-align: center;
+
+	span {
+		display: block;
+		font-style: italic;
+		font-size: 24px;
+		letter-spacing: 1.5px;
+		color: #848789;
+		margin: 15px 0 20px 0;
+	}
+
+	&__logo {}
+	&__logo-img {margin: 0 0 15px 0;}
+
+	input[type=text] {
+	vertical-align: middle;
+  width: 400px;
+  height: 60px;
+  		font-style: italic;
+		font-size: 20px;
+		letter-spacing: 1.5px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 10px 0 0 0;
+
+
+   
+
+	}
+
+	input[type=button] {
+		vertical-align: middle;
+	letter-spacing: 1.5px;
+	font-size: 22px;
+	font-weight: 200;
+   background-color: rgba(100, 194, 158, 1);
+   width: 120px;
+   height: 60px;
+   border: none;
+   color: white;
+   
+   
+   cursor: pointer;
+   margin: 10px 0 0 10px;
+  	transition-duration: 1s;
+
+
+  	&:hover {
+  		color: rgba(100, 150, 158, 1);
+  		border: 2px solid rgba(100, 150, 158, 1); 
+  	}
+	}
+
+}
+
+
+
+
+
+// ====================== FOOTER block ======================
+footer {
+	 padding: 100px 0;
+ 		background-color: rgb(192,192,192, 0.15);
+ 		transition-duration: 1s;
+
+ 		@media screen and (max-width: 800px) {
+ 			padding: 20px 0;
+ 		}
+}
+.footer {
+
+	&__row {
+		display: flex;
+		justify-content:space-between;
+
+		// @media screen and (max-width: 800px) {
+		// flex-direction: column;
+	 // 	justify-content: center;
+
+
+	 // }
+		
+	}
+	&__address {
+		// letter-spacing: 0.5px;
+		text-align: left;
+		line-height: 18px;
+		font-style: italic;
+		font-size: 14px;
+		color: #848789;
+		span {
+			font-weight: bold;
+			font-style: normal;
+		}
+		width: 250px;
+	}
+	&__social {
+		min-width: 160px;
+		img {
+			margin: 0 7.5px;
+		}
+	}
+	&__dev {
+		img {vertical-align: middle;
+			margin: 0 0 0 5px;}
+		vertical-align: middle;
+		text-align: right;
+		font-style: italic;
+		font-size: 14px;
+		color: #848789;
+		width: 250px;
+	}
+
+
+	@media screen and (max-width: 800px) {
+
+		&__row {
+		flex-direction: column;
+	 	align-items:center;
+	 	}
+
+	 	&__address, &__social { 
+	 		text-align: center;
+	 		margin: 0 0 15px 0;
+	 }
+
+	 	&__address, &__social, &__dev { 
+	 		text-align: center;
+	 }
+
+}
 }
 
 
